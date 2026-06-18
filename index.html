@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinghui Wu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #f5f5f5;
+            font-size: 16px;
+        }
+
+        nav {
+            background: transparent;
+            border-bottom: none;
+            padding: 2rem 0 1rem 0;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-title {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #333;
+        }
+
+        .nav-title a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.2s;
+            padding-bottom: 2px;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            border-bottom-color: #5b21b6;
+        }
+
+        .about-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 20px;
+            object-fit: cover;
+            float: left;
+            margin-right: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 1.5rem;
+        }
+
+        .bio {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+
+        .bio p {
+            margin-bottom: 1rem;
+        }
+
+        .disclaimer {
+            font-size: 0.85rem;
+            line-height: 1.5;
+            color: #888;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .icon-links {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            padding: 0.3rem 0.7rem;
+            font-size: 0.8rem;
+            text-decoration: none;
+            border-radius: 20px;
+            border: 1px solid #d8d8d8;
+            background: #f8f9fa;
+            color: #495057;
+            cursor: pointer;
+            transition: all 0.2s;
+            line-height: 1.4;
+            font-family: inherit;
+        }
+
+        .btn:hover {
+            background: #e9ecef;
+            border-color: #c0c0c0;
+        }
+
+        footer {
+            background: transparent;
+            border-top: none;
+            padding: 2rem 0;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                gap: 1.5rem;
+                font-size: 0.9rem;
+            }
+
+            .profile-image {
+                float: none;
+                margin: 0 auto 1.5rem auto;
+                display: block;
+            }
+
+            h1 {
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            .bio {
+                text-align: left;
+            }
+
+            .icon-links {
+                justify-content: center;
+            }
+
+            .bio {
+                font-size: 1rem;
+            }
+
+            .profile-image {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-title"><a href="index.html">Pinghui Wu</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">About</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="policy.html">Policy Work</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="about-container">
+        <img src="portrait.jpg" alt="Pinghui Wu" class="profile-image">
+
+        <h1>Pinghui Wu</h1>
+
+        <div class="bio">
+            <p>I am a senior economist in the Research Department at the Federal Reserve Bank of Boston. My research focuses on labor economics, particularly employment dynamics, skills and jobs, and economic inequality.</p>
+
+            <p>I received a joint PhD in Economics and Social Work from the University of Michigan, where I also served as a postdoctoral fellow at Poverty Solutions prior to joining the Boston Fed.</p>
+        </div>
+
+        <div class="icon-links">
+            <a href="mailto:pinghui.wu@bos.frb.org" class="btn btn-email">Email</a>
+            <a href="https://www.linkedin.com/in/pinghwu/" target="_blank" class="btn btn-linkedin">LinkedIn</a>
+            <a href="https://www.bostonfed.org/people/bank/pinghui-wu.aspx" target="_blank" class="btn btn-link">Work Page</a>
+        </div>
+
+        <div class="disclaimer">
+            <p>The views expressed on this website are my own and do not represent the views of the Federal Reserve Bank of Boston, the Board of Governors, or the Federal Reserve System.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Pinghui Wu. All rights reserved.
+    </footer>
+</body>
+</html>
