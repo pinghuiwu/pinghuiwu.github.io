@@ -36,7 +36,7 @@
 
         .nav-title {
             font-size: 1.1rem;
-            font-weight: 400;
+            font-weight: 600;
             color: #333;
         }
 
@@ -72,20 +72,14 @@
         }
 
         .profile-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 20px;
+            width: 120px;
+            height: 120px;
+            border-radius: 15px;
             object-fit: cover;
             float: left;
-            margin-right: 2rem;
+            margin-right: 1.5rem;
             margin-bottom: 1rem;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 600;
-            color: #1a1a1a;
-            margin-bottom: 1.5rem;
+            margin-top: 0.5rem;
         }
 
         .bio {
@@ -97,6 +91,14 @@
 
         .bio p {
             margin-bottom: 1rem;
+        }
+
+        .bio p:first-child {
+            margin-top: 0;
+        }
+
+        .bio p:nth-child(2) {
+            clear: both;
         }
 
         .disclaimer {
@@ -112,6 +114,7 @@
             display: flex;
             gap: 0.5rem;
             flex-wrap: wrap;
+            clear: both;
         }
 
         .btn {
@@ -162,10 +165,6 @@
                 display: block;
             }
 
-            h1 {
-                font-size: 2rem;
-                text-align: center;
-            }
 
             .bio {
                 text-align: left;
@@ -201,8 +200,6 @@
 
     <div class="about-container">
         <img src="portrait.jpg" alt="Pinghui Wu" class="profile-image">
-
-        <h1>Pinghui Wu</h1>
 
         <div class="bio">
             <p>I am a senior economist in the Research Department at the Federal Reserve Bank of Boston. My research focuses on labor economics, particularly employment dynamics, skills and jobs, and economic inequality.</p>
